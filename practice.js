@@ -97,7 +97,7 @@ Instead, console.log your whole backPack object and then check out the console. 
 
   for (var i in states) {
     if (states[i] > 30) {
-      alert(states(i));
+      alert(i);
     }
   }
 
@@ -305,12 +305,10 @@ objects until you find Tyler's account (use tylermcginnis33@gmail.com to find hi
 Once you find the particular indice he's located in, delete him from the array.*/
 
   for (var i = 0; i < users.length; i++) {
-    for (var i in [i]) {
-      if [i].email === 'tylermcginnis33') {
-        delete [i];
-      }
+    if (users[i].email === 'tylermcginnis33@gmail.com') {
+      users.splice(i, 1);
     }
-    return users;
+    console.log(users);
   }
 
 //The activity we just did is very much how data works in 'the real world'.
