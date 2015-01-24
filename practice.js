@@ -76,29 +76,30 @@ Instead, console.log your whole backPack object and then check out the console. 
 
 //Create an Object called 'album' with 5 keys named different song titles that you make up, with the values being the length of each song.
 
-  //Code Here
+  var album = {song1: 1, song2: 2, song3: 4, song4: 4, song5: 5};
 
 //Now, loop through your album object alerting every song title individually.
 
-  //Code Here
-
+  for (var i in album) {
+    alert(i);
+  }
 
 
 
 //NEXT PROBLEM
 
 
-
-
 //Create an object called states that has 5 US states as properties with the values being their population (doesn't have to be accurate).
 
-  //Code Here
+  var states = {Utah: 123345, Idaho: 14, Oregon: 589, California: 38929, Washington: 13232};
 
 //Now, loop through your states object and if the states population is greater than 30K, alert that state.
 
-  //Code Here
-
-
+  for (var i in states) {
+    if (states[i] > 30) {
+      alert(states(i));
+    }
+  }
 
 
 //NEXT PROBLEM
@@ -117,13 +118,18 @@ var user = {
 /*Above you're given a user object. Loop through the user object checking to make sure
 that each value is truthy. If it's not truthy, remove it from the object. */
 
-  //Code Here
+  for (var i in user) {
+    if (!user[i]) {
+      delete user[i];
+    }
+    console.log(user);
+  }
 
 //Once you get your truthy Object, Change the remaining values in the object to be specific to you (name: 'your name', username: 'your username'), rather than my information.
 
-  //Code Here
-
-
+  user.name = "Rachel Welch";
+  user.pwHash = "fjkdjskjf";
+  user.username = "rachelwelch";
 
 
 //NEXT PROBLEM
@@ -145,18 +151,15 @@ var user = {
 //Let's say I, the user, decided to change my name and email address to the following
 // name -> 'Tyler S. McGinnis', email -> 'tyler.mcginnis@devmounta.in'. Make that change.
 
-  //Code Here
+  user.name = "Tyler S. McGinnis";
+  user.email = 'tyler.mcginnis@devmounta.in';
 
 //Now call the sayName method that's on the user object which will alert the users email
 
-  //Code Here
-
-
+  user.sayName()
 
 
 //NEXT PROBLEM
-
-
 
 
 //Create an empty object called methodCollection.
